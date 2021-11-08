@@ -24,7 +24,7 @@ spec:
       mongodburl: bW9uZ29kYjovL3RvdmE6MTIzNDU2QGVjaG8tcHJvZC1tb25nb2RiLTAuZWNoby1wcm9kLW1vbmdvZGItaGVhZGxlc3M6MjcwMTcsZWNoby1wcm9kLW1vbmdvZGItMS5lY2hvLXByb2QtbW9uZ29kYi1oZWFkbGVzczoyNzAxNy9lY2hv
       dbname: ZWNobw==
       collectionName: ZWNob3M=
-      host: ZWNoby1yYy1tb25nb2RiLTAuZWNoby1yYy1tb25nb2RiLWhlYWRsZXNzLGVjaG8tcmMtbW9uZ29kYi0xLmVjaG8tcHJvZC1yYy1oZWFkbGVzcw==
+      host: ZWNoby1wcm9kLW1vbmdvZGItMC5lY2hvLXByb2QtbW9uZ29kYi1oZWFkbGVzcyxlY2hvLXByb2QtbW9uZ29kYi0wLmVjaG8tcHJvZC1tb25nb2RiLWhlYWRsZXNz
       port: MjcwMTc=
       user: dG92YQ==
       password: MTIzNDU2
