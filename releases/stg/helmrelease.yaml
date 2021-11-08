@@ -6,7 +6,7 @@ metadata:
   namespace: stg
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:stg-*
+    filter.fluxcd.io/deployment: glob:stg-*
 spec:
   releaseName: echo-rc
   chart:
@@ -17,5 +17,5 @@ spec:
     deployment:
       image:
         repository: tovaklein/echo
-        tag: 0.4.13
+        tag: stg-1.1.0
       replicaCount: 2

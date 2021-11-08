@@ -6,7 +6,6 @@ metadata:
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
-    #repository.fluxcd.io/chart-image: tovaklein/echo
     filter.fluxcd.io/deployment: glob:dev-*
     
 spec:
@@ -21,5 +20,5 @@ spec:
         repository: tovaklein/echo
         tag: dev-1.10.2
       replicaCount: 1
-    hpa:
-      enabled: false
+    ingress:
+      path: "/dev"
