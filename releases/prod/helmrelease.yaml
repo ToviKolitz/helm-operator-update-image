@@ -17,5 +17,5 @@ spec:
     deployment:
       image:
         repository: tovaklein/echo
-        tag: dev-1.10.2
+        tag: 0.4.11
       replicaCount: 3
