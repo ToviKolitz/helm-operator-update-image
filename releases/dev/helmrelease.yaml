@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: tovaklein/echo
-      tag: dev-1.10.2
+      tag: dev-1.14.3
     replicaCount: 3
     ingress:
       host: dev.tovaecho1.tk
