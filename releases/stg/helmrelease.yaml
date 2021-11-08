@@ -21,10 +21,10 @@ spec:
     ingress:
       host: stg.tovaecho1.tk
     secret:
-      mongodburl: bW9uZ29kYjovL3RvdmE6MTIzNDU2QGVjaG8tcmMtbW9uZ29kYi0wLmVjaG8tcmMtbW9uZ29kYi1oZWFkbGVzczoyNzAxNyxlY2hvLXJjLW1vbmdvZGItMS5lY2hvLXJjLW1vbmdvZGItaGVhZGxlc3M6MjcwMTcvZWNobw==
+      mongodburl: bW9uZ29kYjovL3RvdmE6MTIzNDU2QGVjaG8tcmMtbW9uZ29kYi0wLmVjaG8tcmMtbW9uZ29kYi1oZWFkbGVzczoyNzAxNyxlY2hvLXJjLW1vbmdvZGItMS5lY2hvLXByb2QtcmMtaGVhZGxlc3M6MjcwMTcvZWNobw==
       dbname: ZWNobw==
       collectionName: ZWNob3M=
-      host: ZWNoby1yYy1tb25nb2RiLTAuZWNoby1yYy1tb25nb2RiLWhlYWRsZXNzLGVjaG8tcmMtbW9uZ29kYi0xLmVjaG8tcmMtbW9uZ29kYi1oZWFkbGVzcw==
+      host: ZWNoby1yYy1tb25nb2RiLTAuZWNoby1yYy1tb25nb2RiLWhlYWRsZXNzLGVjaG8tcmMtbW9uZ29kYi0xLmVjaG8tcHJvZC1yYy1oZWFkbGVzcw==
       port: MjcwMTc=
       user: dG92YQ==
       password: MTIzNDU2
