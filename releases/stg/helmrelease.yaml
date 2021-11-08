@@ -19,3 +19,5 @@ spec:
         repository: tovaklein/echo
         tag: stg-1.1.0
       replicaCount: 2
+    ingress:
+      path: "/stg"
