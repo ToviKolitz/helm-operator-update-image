@@ -17,7 +17,7 @@ spec:
     deployment:
       image:
         repository: gcr.io/k8s-my-firs-project/echo
-        tag: dev-1.10.0
+        tag: 0.4.11
       replicaCount: 1
     hpa:
       enabled: false
