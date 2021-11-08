@@ -14,10 +14,11 @@ spec:
     path: charts/myechochart
     ref: master
   values:
-    image:
-      repository: gcr.io/k8s-my-firs-project/echo
-      tag: stg-1.1.0
-    replicaCount: 2
+    deployment:
+      image:
+        repository: gcr.io/k8s-my-firs-project/echo
+        tag: stg-1.1.0
+      replicaCount: 2
     hpa:
       enabled: true
       maxReplicas: 10

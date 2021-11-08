@@ -14,7 +14,8 @@ spec:
     path: charts/myechochart
     ref: master
   values:
-    image:
-      repository: gcr.io/k8s-my-firs-project/echo
-      tag: 0.4.11
-    replicaCount: 3
+    deployment:
+      image:
+        repository: gcr.io/k8s-my-firs-project/echo
+        tag: 0.4.11
+      replicaCount: 3
