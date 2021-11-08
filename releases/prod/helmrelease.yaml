@@ -17,7 +17,7 @@ spec:
     deployment:
       image:
         repository: tovaklein/echo
-        tag: 0.4.14
+        tag: 0.4.21
       replicaCount: 3
     ingress:
       path: "/prod"
