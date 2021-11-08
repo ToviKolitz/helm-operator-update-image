@@ -2,16 +2,16 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: podinfo-dev
+  name: echo-dev
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: glob:dev-*
 spec:
-  releaseName: podinfo-dev
+  releaseName: echo-dev
   chart:
     git: git@github.com:ToviKolitz/helm-operator-update-image
-    path: charts/podinfo
+    path: charts/myechochart
     ref: master
   values:
     image:
