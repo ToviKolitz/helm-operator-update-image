@@ -1,0 +1,21 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: delete-logs-cronjobs
+spec:
+  schedule: "0 0 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: mongo-delete-logs-cron
+            image: mongo
+            envFrom:
+              - secretRef:
+                  name: {{ .Values.secret.secretName }}
+            command:
+            - /bin/sh
+            - -c
+            - mongo $DBNAME --eval "db.$(COLLECTIONNAME).drop()" --host $HOST --port $PORT --username $USER --password $PASSWORD --authenticationDatabase $DBNAME
+          restartPolicy: OnFailure
