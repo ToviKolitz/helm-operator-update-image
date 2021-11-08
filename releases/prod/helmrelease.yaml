@@ -17,5 +17,5 @@ spec:
     deployment:
       image:
         repository: gcr.io/k8s-my-firs-project/echo
-        tag: 0.4.11
+        tag: stg-1.1.0
       replicaCount: 3
