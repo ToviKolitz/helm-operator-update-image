@@ -6,8 +6,7 @@ metadata:
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:dev-*
-    
+    filter.fluxcd.io/chart-image: glob:dev-* 
 spec:
   releaseName: echo-dev
   chart:
@@ -20,4 +19,4 @@ spec:
       tag: dev-1.10.2
     replicaCount: 1
     ingress:
-      path: "/dev"
+      host: dev.tovaecho1.tk

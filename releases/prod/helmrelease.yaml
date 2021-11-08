@@ -19,4 +19,4 @@ spec:
       tag: 0.4.22
     replicaCount: 3
     ingress:
-      path: "/prod"
+      host: prod.tovaecho1.tk
