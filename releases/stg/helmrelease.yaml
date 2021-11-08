@@ -20,3 +20,28 @@ spec:
     replicaCount: 2
     ingress:
       host: stg.tovaecho1.tk
+
+
+
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: echo-rc
+  namespace: stg
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:stg-*
+spec:
+  releaseName: echo-rc
+  chart:
+    git: git@github.com:ToviKolitz/helm-operator-update-image
+    path: charts/myechochart
+    ref: master
+  values:
+    image:
+      repository: tovaklein/echo
+      tag: stg-3.2.1
+    replicaCount: 3
+    ingress:
+      host: stg.tovaecho1.tk

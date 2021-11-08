@@ -8,9 +8,9 @@ metadata:
     cert-manager.io/issue-temporary-certificate: "true"
 spec:
   tls:
-    - hosts:
-        - {{ .Values.ingress.host }}
-      secretName: {{ .Values.ingress.secretName }}
+    # - hosts:
+    #     - {{ .Values.ingress.host }}
+    #   secretName: {{ .Values.ingress.secretName }}
   rules:
     - host: {{ .Values.ingress.host }}
       http:
