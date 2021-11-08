@@ -3,7 +3,7 @@ deployment:
   lable: app-echo
   image: 
     repository: gcr.io/k8s-my-firs-project/echo
-    tag: 2.0
+    tag: "2.0"
   appPort: 3000
   mongourlkey: MONGODBURL
 service:
