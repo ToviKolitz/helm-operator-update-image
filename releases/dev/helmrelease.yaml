@@ -16,30 +16,6 @@ spec:
   values:
     image:
       repository: tovaklein/echo
-      tag: dev-1.10.2
-    replicaCount: 3
-    ingress:
-      host: dev.tovaecho1.tk
-
-
----
-apiVersion: helm.fluxcd.io/v1
-kind: HelmRelease
-metadata:
-  name: echo-dev
-  namespace: dev
-  annotations:
-    fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:dev-*
-spec:
-  releaseName: echo-dev
-  chart:
-    git: git@github.com:ToviKolitz/helm-operator-update-image
-    path: charts/myechochart
-    ref: master
-  values:
-    image:
-      repository: tovaklein/echo
       tag: dev-1.14.0
     replicaCount: 3
     ingress:
