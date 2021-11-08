@@ -6,7 +6,9 @@ metadata:
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:dev-*
+    #repository.fluxcd.io/chart-image: tovaklein/echo
+    filter.fluxcd.io/deployment: glob:dev-*
+    
 spec:
   releaseName: echo-dev
   chart:
@@ -17,7 +19,7 @@ spec:
     deployment:
       image:
         repository: tovaklein/echo
-        tag: 0.4.13
+        tag: dev-1.10.2
       replicaCount: 1
     hpa:
       enabled: false
