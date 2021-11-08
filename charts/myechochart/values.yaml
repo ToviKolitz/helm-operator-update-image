@@ -1,11 +1,11 @@
 deployment:
-  replicaCount: 2
   lable: app-echo
-  image: 
-    repository: gcr.io/k8s-my-firs-project/echo
-    tag: "2.0"
   appPort: 3000
   mongourlkey: MONGODBURL
+image: 
+  repository: gcr.io/k8s-my-firs-project/echo
+  tag: "2.0"
+replicaCount: 2
 service:
   serviceName: echo-service
   type: ClusterIP

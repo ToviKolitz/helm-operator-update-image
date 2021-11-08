@@ -6,7 +6,7 @@ metadata:
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/deployment: glob:dev-*
+    filter.fluxcd.io/chart-image: glob:dev-*
     
 spec:
   releaseName: echo-dev
@@ -15,10 +15,9 @@ spec:
     path: charts/myechochart
     ref: master
   values:
-    deployment:
-      image:
-        repository: tovaklein/echo
-        tag: dev-1.10.2
-      replicaCount: 1
+    image:
+      repository: tovaklein/echo
+      tag: dev-1.10.2
+    replicaCount: 1
     ingress:
       path: "/dev"

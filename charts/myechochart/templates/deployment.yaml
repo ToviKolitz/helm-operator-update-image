@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: {{ .Values.deployment.lable }}
 spec:
-  replicas: {{ .Values.deployment.replicaCount }}
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: {{ .Values.deployment.lable }}
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.deployment.image.repository }}:{{ .Values.deployment.image.tag }}"
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           envFrom:
           - configMapRef:
               name: {{ .Values.configMap.configMapName }}
