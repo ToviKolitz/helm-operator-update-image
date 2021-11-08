@@ -16,6 +16,6 @@ spec:
   values:
     deployment:
       image:
-        repository: gcr.io/k8s-my-firs-project/echo
+        repository: tovaklein/echo
         tag: dev-1.10.2
       replicaCount: 3
