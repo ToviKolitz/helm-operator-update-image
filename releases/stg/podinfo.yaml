@@ -10,13 +10,13 @@ metadata:
 spec:
   releaseName: podinfo-rc
   chart:
-    git: git@github.com:ToviKolitz/helm-operator-get-started
+    git: git@github.com:ToviKolitz/helm-operator-update-image
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: tovaklein/podinfo
-      tag: stg-9ij63o4c
+      repository: gcr.io/k8s-my-firs-project/echo
+      tag: stg-1.1.0
     replicaCount: 2
     hpa:
       enabled: true
