@@ -20,4 +20,13 @@ spec:
     replicaCount: 3
     ingress:
       host: dev.tovaecho1.tk
+    secret:
+      mongodburl: bW9uZ29kYjovL3RvdmE6MTIzNDU2QGVjaG8tZGV2LW1vbmdvZGItMC5lY2hvLWRldi1tb25nb2RiLWhlYWRsZXNzOjI3MDE3LGVjaG8tZGV2LW1vbmdvZGItMS5lY2hvLWRldi1tb25nb2RiLWhlYWRsZXNzOjI3MDE3L2VjaG8=
+      dbname: ZWNobw==
+      collectionName: ZWNob3M=
+      host: ZWNoby1kZXYtbW9uZ29kYi0wLmVjaG8tZGV2LW1vbmdvZGItaGVhZGxlc3MsZWNoby1kZXYtbW9uZ29kYi0wLmVjaG8tZGV2LW1vbmdvZGItaGVhZGxlc3M=
+      port: MjcwMTc=
+      user: dG92YQ==
+      password: MTIzNDU2
+      secretName: echo-app-secret
 
